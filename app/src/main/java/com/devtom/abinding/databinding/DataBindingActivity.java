@@ -25,7 +25,6 @@ public abstract class DataBindingActivity<T extends ViewDataBinding> extends Fra
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,  WindowManager.LayoutParams.FLAG_FULLSCREEN);
         super.onCreate(savedInstanceState);
         frameLayout = (FrameLayout) LayoutInflater.from(this).inflate(
                 R.layout.base_data_binding_view_container,
